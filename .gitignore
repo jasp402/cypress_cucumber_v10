@@ -106,3 +106,4 @@ dist
 #.idea folder by IntelliJ IDEA
 /.idea
 /package-lock.json
+/cypress/videos/

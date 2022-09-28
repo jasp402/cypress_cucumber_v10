@@ -3,9 +3,13 @@
   "description": "This is a base for install project of Cypress with cucumber preprocessor.\r Currently ``cypress-cucumber-preprocessor`` library is deprecated. but used alternative library using\r ``https://github.com/badeball/cypress-cucumber-preprocessor``",
   "version": "1.0.0",
   "main": "cypress/e2e/login.cy.feaure",
-  "devDependencies": {},
+  "devDependencies": {
+    "cypress": "^10.9.0"
+  },
   "scripts": {
-    "start": "npx cypress open"
+    "start": "npx cypress open",
+    "test": "npx cypress run --record --key c7856cff-d7dd-4467-ab9b-01c0a8fcff2d --reporter",
+    "reports": "node report-cucumber.js"
   },
   "repository": {
     "type": "git",
@@ -27,7 +31,6 @@
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
-    "cypress": "^10.8.0",
     "esbuild": "^0.15.9",
     "multiple-cucumber-html-reporter": "^2.0.0"
   }

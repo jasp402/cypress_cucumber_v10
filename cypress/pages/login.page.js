@@ -29,7 +29,6 @@ class homeSaucePage {
         this.elements.errorMessage().should('have.text', errorMessage);
     }
 
-
 }
 
 module.exports = new homeSaucePage();

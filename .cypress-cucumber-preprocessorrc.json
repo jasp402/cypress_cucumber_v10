@@ -1,12 +1,12 @@
 {
   "json": {
-    "enabled": false,
-    "output": "jsonlogs/log.json",
-    "formatter": "cucumber-json-formatter.exe"
+    "enabled": true,
+    "output": "cypress/logs/log.json",
+    "formatter": "./bin/cucumber-json-formatter.exe"
   },
   "messages": {
-    "enabled": false,
-    "output": "jsonlogs/messages.ndjson"
+    "enabled": true,
+    "output": "cypress/logs/messages.ndjson"
   },
   "html": {
     "enabled": false
