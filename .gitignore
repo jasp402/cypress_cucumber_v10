@@ -107,3 +107,5 @@ dist
 /.idea
 /package-lock.json
 /cypress/videos/
+/cypress/screenshots/
+/cypress/reports/

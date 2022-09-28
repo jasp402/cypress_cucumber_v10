@@ -8,8 +8,8 @@
   },
   "scripts": {
     "start": "npx cypress open",
-    "test": "npx cypress run --record --key c7856cff-d7dd-4467-ab9b-01c0a8fcff2d --reporter",
-    "reports": "node report-cucumber.js"
+    "test": "npx cypress run --record --key c7856cff-d7dd-4467-ab9b-01c0a8fcff2d",
+    "posttest": "node report-cucumber.js"
   },
   "repository": {
     "type": "git",

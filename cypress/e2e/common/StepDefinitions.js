@@ -2,7 +2,7 @@ import {Given, When,Then} from "@badeball/cypress-cucumber-preprocessor";
 import LoginPage  from '../../pages/login.page';
 
 Given('A user enters to the login page', ()=>{
-    cy.visit('/')
+    cy.visit('/');
 })
 
 When('A user enters the username {string}', (username)=>{
@@ -11,22 +11,28 @@ When('A user enters the username {string}', (username)=>{
 
 When('A user enters incorrect credentials', (dataTable)=>{
     dataTable.hashes().forEach(row => {
-        LoginPage.typeUsername(row.username)
-        LoginPage.typePassword(row.password)
+        LoginPage.typeUsername(row.username);
+        LoginPage.typePassword(row.password);
     });
 })
 
 When('A user enters the password {string}', (password)=>{
-    LoginPage.typePassword(password)
+    LoginPage.typePassword(password);
 })
 
 When('A user clicks on the login button', ()=>{
-    LoginPage.clickLogin()
+    LoginPage.clickLogin();
 })
 
 Then('A user will be logged in', ()=>{
-    LoginPage.urlSuccess()
+    LoginPage.urlSuccess();
 })
 
 Then('The error message {string} is displayed', (errorMessage)=>{
-    LoginPage.msjError(errorMessage)})
+    LoginPage.msjError(errorMessage);
+    cy.screenshot();
+})
+
+
+
+
